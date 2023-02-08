@@ -1,0 +1,41 @@
+{
+  "name": "stmu-blocks",
+  "version": "1.0.0",
+  "description": "Block Editor blocks for St. Mary's.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eshannon3/stmu-blocks.git"
+  },
+  "author": "St. Mary's",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eshannon3/stmu-blocks/issues"
+  },
+  "homepage": "https://github.com/eshannon3/stmu-blocks#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "@wordpress/components": "^8.5.0",
+    "@wordpress/compose": "^3.19.1",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.6.0",
+    "ignore-emit-webpack-plugin": "^2.0.2",
+    "mini-css-extract-plugin": "^0.8.2",
+    "node-sass": "^4.14.1",
+    "path": "^0.12.7",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "sass-loader": "^7.3.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}

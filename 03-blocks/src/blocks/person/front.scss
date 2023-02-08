@@ -1,0 +1,8 @@
+  
+.wp-block-stmu-person { margin-bottom:1em; padding:1em 1em 0; border:2px solid #999; }
+.personFlex { display:flex; flex-direction:column; }
+.personImage img { display:block; margin:0 auto; }
+@media (min-width:600px) {
+    .personFlex { flex-direction:row; }
+    .personImage { min-width:150px; margin-right:1em; margin-bottom:1em; padding-top:.4em; }
+}

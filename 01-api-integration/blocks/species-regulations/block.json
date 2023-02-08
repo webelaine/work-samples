@@ -1,0 +1,22 @@
+{
+	"apiVersion": 2,
+	"name": "happyprime/species-regulations",
+	"title": "Species Regulations",
+	"category": "widgets",
+	"description": "Displays fishing regulations from the Fish Rules API for a particular species.",
+	"icon": "list-view",
+	"attributes": {
+		"species": {
+			"type": "number",
+			"default": 0
+		},
+		"type": {
+			"type": "string",
+			"default": "recreational"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"editorScript": "file:../build/species-regulations.js"
+}

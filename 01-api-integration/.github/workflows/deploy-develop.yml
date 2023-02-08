@@ -1,0 +1,66 @@
+name: Staging Deployment
+
+on:
+  push:
+    branches: [ develop ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout project
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js LTS
+      uses: actions/setup-node@v2
+      with:
+        node-version: 16
+
+    - name: Install latest NPM
+      run: npm install -g npm
+
+    - name: Install project dependencies
+      run: npm ci
+
+    - name: Run build process(es)
+      run: |
+        npm run build
+
+    - name: Deploy to server
+      if: success()
+      uses: easingthemes/ssh-deploy@v2.2.11
+      env:
+          SSH_PRIVATE_KEY: ${{ secrets.MISSING_SSH_KEY }}
+          ARGS: "-rltgoDzvO --exclude-from=.deploy_ignore --delete"
+          SOURCE: "./"
+          REMOTE_HOST: ${{ secrets.MISSING_DEPLOY_HOST }}
+          REMOTE_USER: ${{ secrets.MISSING_DEPLOY_USER }}
+          REMOTE_PORT: ${{ secrets.MISSING_DEPLOY_PORT }}
+          TARGET: ${{ secrets.REMOTE_TARGET }}
+
+    - name: Successful deployment Slack notification
+      if: success()
+      uses: wearerequired/slack-messaging-action@v1
+      with:
+        bot_token: ${{ secrets.SLACK_BOT_TOKEN }}
+        channel: project-gulf-council
+        payload: >-
+          {
+            "icon_emoji": ":shipit:",
+            "username": "Happy Prime Deployment: ${{ github.event.sender.login }}",
+            "text": ":white_check_mark: Deployment from the <https://github.com/${{ github.repository }}|${{ github.repository }}> `develop` branch to https://gulfcouncil.missingcolors.com complete."
+          }
+
+    - name: Deployment failed Slack notification
+      if: failure()
+      uses: wearerequired/slack-messaging-action@v1
+      with:
+        bot_token: ${{ secrets.SLACK_BOT_TOKEN }}
+        channel: project-gulf-council
+        payload: >-
+          {
+            "icon_emoji": ":shipit:",
+            "username": "Happy Prime Deployment: ${{ github.event.sender.login }}",
+            "text": ":large_red_square: Deployment from the <https://github.com/${{ github.repository }}|${{ github.repository }}> `develop` branch to https://gulfcouncil.missingcolors.com failed."
+          }

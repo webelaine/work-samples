@@ -1,0 +1,9 @@
+.deploy_ignore
+.github
+node_modules
+vendor
+.phpcs.xml.dist
+composer.json
+composer.lock
+package.json
+package-lock.json

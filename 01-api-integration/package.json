@@ -1,0 +1,24 @@
+{
+	"name": "fish_rules_api_integration",
+	"version": "0.0.1",
+	"description": "A WordPress plugin to import data from the Fish Rules API",
+	"devDependencies": {
+		"@wordpress/scripts": "^25.0.0"
+	},
+	"scripts": {
+		"build": "npm run build:blocks && npm run build:scripts",
+		"build:blocks": "wp-scripts build --config blocks/webpack.config.js",
+		"build:scripts": "wp-scripts build assets/js/src/*.js --output-path=build/",
+		"lint:js": "wp-scripts lint-js blocks/",
+		"fix:js": "wp-scripts lint-js blocks/ --fix"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/hapypprime/fish-rules-api-integration.git"
+	},
+	"author": "Happy Prime",
+	"bugs": {
+		"url": "https://github.com/happyprime/fish-rules-api-integration/issues"
+	},
+	"homepage": "https://github.com/happyprime/fish-rules-api-integration#readme"
+}

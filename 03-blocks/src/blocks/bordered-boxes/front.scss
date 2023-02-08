@@ -1,0 +1,5 @@
+/* same styles as Stat Block, but have to have more specificity to override the default for backwards compatibility */
+/* The duplicated styles are there so the Inspector preview of styles is accurate, but they aren't specific enough to override defaults */
+ul.bordered-box .wp-block-stmu-bordered-box-item, .wp-block-stmu-bordered-box-item { background:#fff; border:2px solid #999; }
+ul.bordered-box .wp-block-stmu-bordered-box-item.is-style-gold, .wp-block-stmu-bordered-box-item.is-style-gold { background:#f2bf49; border:2px solid #999; }
+ul.bordered-box .wp-block-stmu-bordered-box-item.is-style-blue, .wp-block-stmu-bordered-box-item.is-style-blue { background:#036; border:2px solid #036; color:#fff; }

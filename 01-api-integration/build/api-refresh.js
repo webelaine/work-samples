@@ -1,0 +1,1 @@
+(()=>{function e(){var e={action:"fishrules_api_refresh",type:this.value,_ajax_nonce:ajaxData.nonce};jQuery.post(ajaxData.ajax_url,e,(function(e){alert(e)}))}document.getElementById("comregs").addEventListener("click",e),document.getElementById("recregs").addEventListener("click",e),document.getElementById("species").addEventListener("click",e)})();

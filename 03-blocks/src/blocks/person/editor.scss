@@ -1,0 +1,16 @@
+// Person block editor styles
+.editor-styles-wrapper .wp-block-stmu-person h2,
+.editor-styles-wrapper .wp-block-stmu-person h3,
+.editor-styles-wrapper .wp-block-stmu-person h4 {
+    margin-top:0; margin-bottom:0; display:flex;
+}
+.wp-block-stmu-person h2 > span,
+.wp-block-stmu-person h3 > span,
+.wp-block-stmu-person h4 > span {
+    padding:0 .2em;
+    border:1px solid #ccc;
+}
+.personFlex { display:flex; }
+.personFlex .image-wrapper { min-width:150px; margin:1.5em 1em 0 0; }
+.editor-styles-wrapper .image-wrapper button { display:block; }
+.personFlex .editor-inner-blocks { width:100%; }

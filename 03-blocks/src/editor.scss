@@ -1,0 +1,71 @@
+@import './blocks/a11y-table/editor.scss';
+@import './blocks/bordered-boxes/editor.scss';
+@import './blocks/donut-chart/editor.scss';
+@import './blocks/faculty-info/editor.scss';
+@import './blocks/finder/editor.scss';
+@import './blocks/icon-heading/editor.scss';
+@import './blocks/person/editor.scss';
+@import './blocks/post-connector/editor.scss';
+@import './blocks/program-info/editor.scss';
+@import './blocks/related-posts/editor.scss';
+
+.editor-block-list-item-stmu-a11y-table .block-editor-block-icon.has-colors svg,
+    .editor-block-list-item-stmu-a11y-table .editor-block-types-list__item-title,
+.editor-block-list-item-stmu-bordered-boxes .block-editor-block-icon.has-colors svg,
+    .editor-block-list-item-stmu-bordered-boxes .editor-block-types-list__item-title,
+.editor-block-list-item-stmu-child-pages .block-editor-block-icon.has-colors svg,
+    .editor-block-list-item-stmu-child-pages .editor-block-types-list__item-title,
+.editor-block-list-item-stmu-donut-chart .block-editor-block-icon.has-colors svg,
+    .editor-block-list-item-stmu-donut-chart .editor-block-types-list__item-title,
+.editor-block-list-item-stmu-drawer .block-editor-block-icon.has-colors svg,
+    .editor-block-list-item-stmu-drawer .editor-block-types-list__item-title,
+.editor-block-list-item-stmu-faculty-contact .block-editor-block-icon.has-colors svg,
+    .editor-block-list-item-stmu-faculty-contact .editor-block-types-list__item-title,
+.editor-block-list-item-stmu-faculty-departments .block-editor-block-icon.has-colors svg,
+    .editor-block-list-item-stmu-faculty-departments .editor-block-types-list__item-title,
+.editor-block-list-item-stmu-faculty-info .block-editor-block-icon.has-colors svg,
+    .editor-block-list-item-stmu-faculty-info .editor-block-types-list__item-title,
+.editor-block-list-item-stmu-faculty-programs .block-editor-block-icon.has-colors svg,
+    .editor-block-list-item-stmu-faculty-programs .editor-block-types-list__item-title,
+.editor-block-list-item-stmu-featured-image .block-editor-block-icon.has-colors svg,
+    .editor-block-list-item-stmu-featured-image .editor-block-types-list__item-title,
+.editor-block-list-item-stmu-finder .block-editor-block-icon.has-colors svg,
+    .editor-block-list-item-stmu-finder .editor-block-types-list__item-title,
+.editor-block-list-item-stmu-icon .block-editor-block-icon.has-colors svg,
+    .editor-block-list-item-stmu-icon .editor-block-types-list__item-title,
+.editor-block-list-item-stmu-icon-heading .block-editor-block-icon.has-colors svg,
+    .editor-block-list-item-stmu-icon-heading .editor-block-types-list__item-title,
+.editor-block-list-item-stmu-master-calendar .block-editor-block-icon.has-colors svg,
+    .editor-block-list-item-stmu-master-calendar .editor-block-types-list__item-title,
+.editor-block-list-item-stmu-person .block-editor-block-icon.has-colors svg,
+    .editor-block-list-item-stmu-person .editor-block-types-list__item-title,
+.editor-block-list-item-stmu-post-connector .block-editor-block-icon.has-colors svg,
+    .editor-block-list-item-stmu-post-connector .editor-block-types-list__item-title,
+.editor-block-list-item-stmu-program-info .block-editor-block-icon.has-colors svg,
+    .editor-block-list-item-stmu-program-info .editor-block-types-list__item-title,
+.editor-block-list-item-stmu-program-degrees .block-editor-block-icon.has-colors svg,
+    .editor-block-list-item-stmu-program-degrees .editor-block-types-list__item-title,
+.editor-block-list-item-stmu-program-departments .block-editor-block-icon.has-colors svg,
+    .editor-block-list-item-stmu-program-departments .editor-block-types-list__item-title,
+.editor-block-list-item-stmu-program-directors .block-editor-block-icon.has-colors svg,
+    .editor-block-list-item-stmu-program-directors .editor-block-types-list__item-title,
+.editor-block-list-item-stmu-program-locations .block-editor-block-icon.has-colors svg,
+    .editor-block-list-item-stmu-program-locations .editor-block-types-list__item-title,
+.editor-block-list-item-stmu-related-pages .block-editor-block-icon.has-colors svg,
+    .editor-block-list-item-stmu-related-pages .editor-block-types-list__item-title,
+.editor-block-list-item-stmu-related-posts .block-editor-block-icon.has-colors svg,
+    .editor-block-list-item-stmu-related-posts .editor-block-types-list__item-title,
+.editor-block-list-item-stmu-residence-halls .block-editor-block-icon.has-colors svg,
+    .editor-block-list-item-stmu-residence-halls .editor-block-types-list__item-title,
+.editor-block-list-item-stmu-school-departments .block-editor-block-icon.has-colors svg,
+    .editor-block-list-item-stmu-school-departments .editor-block-types-list__item-title,
+.editor-block-list-item-stmu-school-faculty .block-editor-block-icon.has-colors svg,
+    .editor-block-list-item-stmu-school-faculty .editor-block-types-list__item-title,
+.editor-block-list-item-stmu-school-programs .block-editor-block-icon.has-colors svg,
+    .editor-block-list-item-stmu-school-programs .editor-block-types-list__item-title,
+.editor-block-list-item-stmu-stat .block-editor-block-icon.has-colors svg,
+    .editor-block-list-item-stmu-stat .editor-block-types-list__item-title
+{
+    color:blue;
+    fill:blue;
+}

@@ -1,0 +1,29 @@
+// A11y table block editor styles
+.wp-block-stmu-a11y-table {
+	border-bottom:1px dashed #000;
+	table-layout: fixed;
+	width: 100%;
+	margin-top: 30px;
+	border-spacing:0;
+	border-collapse:collapse;
+	caption, th, td {
+		border:1px dashed #000;
+		border-bottom:none;
+		padding: 3px;
+	}
+	caption:focus, td:focus, th:focus {
+		background-color: #ffc;
+	}
+	tfoot {
+		width: 100%;
+		td {
+			background-color: #eee;
+		}
+	}
+}
+.components-icon-button:not(:disabled):focus, .components-icon-button:not(:disabled):hover {
+	cursor:pointer;
+}
+.is-hidden {
+	display:none;
+}

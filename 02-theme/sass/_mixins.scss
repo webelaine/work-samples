@@ -1,0 +1,38 @@
+// fonts
+@mixin heading-font() {
+	font-family: 'mukta mahee', serif;
+	color: $primary-color;
+	margin: 0 0 .5em;
+	line-height:1.1;
+	font-weight:normal;
+}
+@mixin body-font() {
+	font-family: 'mukta mahee', arial, sans-serif;
+}
+@mixin accent-font() {
+	font-family: 'dancing script', 'brush script mt', script;
+}
+// clearfix
+@mixin clearfix() {
+	&:before,
+	&:after {
+		content: '';
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+// buttons
+@mixin stmu-button() {
+	display:inline-block;
+	min-width:8em;
+	margin:0 .5em 1em;
+	padding:.6em 1em;
+	font-size:1.125em;
+	line-height:1em;
+	border-radius:$border-radius;
+	text-align:center;
+	text-transform:uppercase;
+	text-decoration:none;
+}

@@ -1,0 +1,8 @@
+.search-posts-control { width:100%; text-align:left; }
+.posts-selected, .posts-search { min-height:7em; margin-bottom:1em; padding:0 1em 1em; border:1px solid #777; }
+.posts-selected button.is-destructive { display:block; position:relative; width:100%; max-width:100%; padding-right:30px; text-align:left; overflow:hidden; }
+.posts-selected button.is-destructive:after { display:block; position:absolute; top:0px; right:0px; width:28px; content:'x'; text-align:center; border-radius:100%; color:#fff; background:#d00; }
+.posts-list div[role="menu"] { max-height:15em; overflow-y:auto; }
+.posts-list button.components-button { position:relative; padding:1em 1em 1em 3em; background:#fff; border-bottom:1px solid #aaa; }
+.posts-list button:before { display:block; position:absolute; top:.6em; left:.6em; font-family:FontAwesome; font-size:1.5em; content:''; color:#191e23; }
+.posts-list button[data-ischecked="true"]:before { content:''; color:#0085ba; }
