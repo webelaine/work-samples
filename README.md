@@ -1,6 +1,6 @@
 # Elaine's work samples
 
-Thank you for your interest in my work! I've included a few of my more recent projects, as well as an older example of a responsive email, so you can get a feel for my coding style. Several of these code samples correspond to visual portfolio samples included on my [LinkedIn profile](https://www.linkedin.com/in/elainershannon/).
+Thank you for your interest in my work! I've tried to include a variety of projects but am happy to discuss others as I have a broad range of experience. Several of these code samples correspond to visual portfolio samples included on my [LinkedIn profile](https://www.linkedin.com/in/elainershannon/).
 
 ## Sample 1: Fish Rules API integration
 
